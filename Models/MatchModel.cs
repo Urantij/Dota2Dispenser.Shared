@@ -28,9 +28,12 @@ public class MatchModel
     public SourceMatchInfo? TvInfo { get; set; }
     public DetailsMatchInfo? DetailsInfo { get; set; }
 
-    public ICollection<PlayerModel> Players { get; set; }
+    /// <summary>
+    /// Игроки появляются вместе с <see cref="DetailsInfo"/> или <see cref="DetailsInfo"/>
+    /// </summary>
+    public ICollection<PlayerModel>? Players { get; set; }
 
-    public MatchModel(int id, DateTime gameDate, string? richPresenceLobbyType, MatchResult matchResult, SourceMatchInfo? tvInfo, DetailsMatchInfo? detailsInfo, ICollection<PlayerModel> players)
+    public MatchModel(int id, DateTime gameDate, string? richPresenceLobbyType, MatchResult matchResult, SourceMatchInfo? tvInfo, DetailsMatchInfo? detailsInfo, ICollection<PlayerModel>? players)
     {
         Id = id;
         GameDate = gameDate;
