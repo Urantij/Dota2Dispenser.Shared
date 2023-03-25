@@ -15,14 +15,14 @@ public class SourceMatchInfo
     /// </summary>
     public ulong MatchId { get; set; }
 
-    public int LobbyType { get; set; }
-    public int GameMode { get; set; }
+    public uint LobbyType { get; set; }
+    public uint GameMode { get; set; }
     /// <summary>
     /// Доступен только в ранкед играх, очевидно.
     /// </summary>
-    public int? AverageMmr { get; set; }
+    public uint? AverageMmr { get; set; }
 
-    public SourceMatchInfo(ulong matchId, int lobbyType, int gameMode, int? averageMmr)
+    public SourceMatchInfo(ulong matchId, uint lobbyType, uint gameMode, uint? averageMmr)
     {
         MatchId = matchId;
         LobbyType = lobbyType;
