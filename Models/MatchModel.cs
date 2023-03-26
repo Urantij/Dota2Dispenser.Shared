@@ -29,7 +29,7 @@ public class MatchModel
     public DetailsMatchInfo? DetailsInfo { get; set; }
 
     /// <summary>
-    /// Игроки появляются вместе с <see cref="DetailsInfo"/> или <see cref="DetailsInfo"/>
+    /// Игроки появляются вместе с <see cref="TvInfo"/> или <see cref="DetailsInfo"/>
     /// </summary>
     public ICollection<PlayerModel>? Players { get; set; }
 
