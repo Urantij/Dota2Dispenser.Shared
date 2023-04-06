@@ -24,4 +24,9 @@ public class Dota2DispenserParams
     /// Unix Seconds
     /// </summary>
     public const string afterDateTimeFilter = "after";
+
+    /// <summary>
+    /// Имя хедера, куда класть свой айди
+    /// </summary>
+    public const string idHeader = "Id";
 }
