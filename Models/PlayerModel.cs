@@ -33,6 +33,11 @@ public class PlayerModel
     public int? LeaverStatus { get; set; }
 
     /// <summary>
+    /// Становится доступен, когда игра успешно завершается.
+    /// </summary>
+    public int? PlayerSlot { get; set; }
+
+    /// <summary>
     /// В рамках одного матча одинаковый индекс = пати
     /// </summary>
     public int? PartyIndex { get; set; }
