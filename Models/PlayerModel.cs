@@ -10,7 +10,8 @@ public class PlayerModel
     public int Id { get; set; }
 
     /// <summary>
-    /// 64
+    /// 64<br/>
+    /// Если нет айди, значение будет 76561202255233023 или может быть 76561202255233022, я не уверен. Но вроде бы первое.
     /// </summary>
     public ulong SteamId { get; set; }
 
@@ -34,8 +35,15 @@ public class PlayerModel
 
     /// <summary>
     /// Становится доступен, когда игра успешно завершается.
+    /// По моим наблюдениям, 0 - редиант.
     /// </summary>
-    public int? PlayerSlot { get; set; }
+    public int? TeamNumber { get; set; }
+
+    /// <summary>
+    /// Становится доступен, когда игра успешно завершается.
+    /// 0-4
+    /// </summary>
+    public int? TeamSlot { get; set; }
 
     /// <summary>
     /// В рамках одного матча одинаковый индекс = пати
