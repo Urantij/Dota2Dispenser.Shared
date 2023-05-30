@@ -7,6 +7,6 @@ namespace Dota2Dispenser.Shared.Consts;
 
 public static class Dota2DispenserPoints
 {
-    public const string matches = "matches";
-    public const string accounts = "accounts";
+    public const string matches = "match";
+    public const string accounts = "account";
 }
