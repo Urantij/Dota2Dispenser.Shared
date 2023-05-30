@@ -30,6 +30,8 @@ public class MatchModel
 
     /// <summary>
     /// Игроки появляются вместе с <see cref="TvInfo"/> или <see cref="DetailsInfo"/>
+    /// Наличие <see cref="TvInfo"/> не гарантирует наличие игроков. Из-за иммортал драфта игроки появляются постепенно.
+    /// В связи с чем ожидается появление всех игроков перед записью.
     /// </summary>
     public ICollection<PlayerModel>? Players { get; set; }
 
