@@ -18,7 +18,7 @@ public class PlayerModel
     /// <summary>
     /// 0, если инфы нет. герои становятся доступны через 2 минуты как их пикнут (дилей)
     /// </summary>
-    public uint HeroId { get; set; }
+    public int HeroId { get; set; }
 
     /// <summary>
     /// Становится доступен, когда игра успешно завершается
@@ -50,7 +50,7 @@ public class PlayerModel
     /// </summary>
     public int? PartyIndex { get; set; }
 
-    public PlayerModel(int id, ulong steamId, uint heroId, int? leaverStatus, int? partyIndex)
+    public PlayerModel(int id, ulong steamId, int heroId, int? leaverStatus, int? partyIndex)
     {
         Id = id;
         SteamId = steamId;
