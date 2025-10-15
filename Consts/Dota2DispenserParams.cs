@@ -27,6 +27,10 @@ public class Dota2DispenserParams
     /// Максимальное количество матчей. Не больше 20.
     /// </summary>
     public const string limitFilter = "limit";
+    /// <summary>
+    /// Включить только матчи, чей айди (не матч айди) больше либо равен параметру.
+    /// </summary>
+    public const string sinceIdFilter = "sinceid";
 
     /// <summary>
     /// Имя хедера, куда класть свой айди
